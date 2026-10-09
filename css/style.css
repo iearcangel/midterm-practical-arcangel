@@ -1,0 +1,91 @@
+
+
+:root {
+  --color-primary: #C2183A;
+  --color-background: #FFF5F6;
+  --color-text: #292124;
+  --color-card: #FFFFFF;
+  --color-border: #F0C5CE;
+
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-large: 32px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--space-large) var(--space-medium);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+main {
+  width: min(100% - 32px, 900px);
+  margin: var(--space-large) auto;
+}
+
+section {
+  background-color: var(--color-card);
+  padding: var(--space-large);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+h2 {
+  color: var(--color-primary);
+}
+
+footer {
+  text-align: center;
+  padding: var(--space-medium);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1100px) {
+  main {
+    width: min(100% - 64px, 900px);
+  }
+}
