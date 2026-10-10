@@ -2,27 +2,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Website</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="My creative portfolio featuring film and graphic design projects.">
+<title>My Creative Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header>
+<h1>My Creative Portfolio</h1>
+<nav aria-label="Main navigation">
+<a href="#about">About Me</a>
+<a href="#toolkit">Toolkit</a>
+<a href="#contact">Contact Me</a>
+</nav>
+</header>
+<main>
+<section id="about" aria-labelledby="about-heading">
+<h2 id="about-heading">About Me</h2>
+<p>
 
-  <header>
-    <h1>My Website</h1>
-  </header>
+        I'm an aspiring filmmaker and director with a love for graphic
 
-  <main>
-    <section>
-      <h2>Welcome!</h2>
-      <p>This is my first website.</p>
-    </section>
-  </main>
+        design. I create publication materials for businesses and
 
-  <footer>
-    <p>My Website</p>
-  </footer>
+        organizations, and I've participated in student film festivals.
 
+        I'm passionate about visual storytelling and creating designs
+
+        that communicate ideas.
+</p>
+</section>
+<section id="works" aria-labelledby="works-heading">
+<h2 id="works-heading">My Works</h2>
+<figure>
+<img
+
+          src="assets/Image.jpg"
+
+          alt="A collage showcasing my creative projects"
+>
+<figcaption>
+
+          A collection of my design projects, documentaries, and short films.
+</figcaption>
+</figure>
+</section>
+<div class="details-layout">
+<section id="toolkit" aria-labelledby="toolkit-heading">
+<h2 id="toolkit-heading">Toolkit</h2>
+<table>
+<caption>Software and tools I use</caption>
+<thead>
+<tr>
+<th scope="col">Software</th>
+<th scope="col">What I Use It For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Adobe Photoshop</th>
+<td>Photo editing and digital graphics</td>
+</tr>
+<tr>
+<th scope="row">Adobe Premiere Pro</th>
+<td>Video editing and color grading</td>
+</tr>
+<tr>
+<th scope="row">CapCut</th>
+<td>Video editing and short-form content</td>
+</tr>
+<tr>
+<th scope="row">Canva</th>
+<td>Graphic design and layout</td>
+</tr>
+<tr>
+<th scope="row">ibisPaint X</th>
+<td>Digital illustration and drawing</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contact" aria-labelledby="contact-heading">
+<h2 id="contact-heading">Contact Me</h2>
+<p>
+
+          Have a project or collaboration in mind?
+
+          I'd love to hear from you.
+</p>
+<form action="#contact" method="get">
+<div class="form-group">
+<label for="email">Your Email Address</label>
+<input
+
+              type="email"
+
+              id="email"
+
+              name="email"
+
+              autocomplete="email"
+
+              placeholder="you@example.com"
+
+              required
+>
+</div>
+<div class="form-group">
+<label for="subject">Subject</label>
+<select id="subject" name="subject" required>
+<option value="">Choose a subject</option>
+<option value="film">Film Project</option>
+<option value="design">Graphic Design</option>
+<option value="collaboration">Collaboration</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="form-group">
+<label for="message">Your Message</label>
+<textarea
+
+              id="message"
+
+              name="message"
+
+              rows="5"
+
+              placeholder="Write your message here..."
+
+              required
+></textarea>
+</div>
+<button type="submit">Send Message</button>
+</form>
+</section>
+</div>
+</main>
+<footer>
+<p>&copy; 2026 My Creative Portfolio</p>
+</footer>
 </body>
 </html>
